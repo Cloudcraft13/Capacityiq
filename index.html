@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CapacityIQ — Warehouse Capacity Marketplace (Prototype)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>CapacityIQ</div>
+      </div>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="search.html">Warehouses</a>
+        <a href="dashboard.html">Owner Dashboard</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="grid grid-2">
+        <div>
+          <div class="h1">Find warehouse space instantly.</div>
+          <p class="p">
+            CapacityIQ is a prototype marketplace that helps businesses book flexible pallet/rack space,
+            and helps warehouses monetise unused capacity.
+          </p>
+          <div class="row">
+            <span class="badge ok">✓ Real-time capacity (demo)</span>
+            <span class="badge ok">✓ Fast booking flow</span>
+            <span class="badge">AI forecasting (planned)</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <form action="search.html" method="get">
+            <div class="field">
+              <label>Location</label>
+              <input name="location" placeholder="e.g., Luton" value="Luton" />
+            </div>
+
+            <div class="row" style="margin-top:12px;">
+              <div class="field">
+                <label>Pallets required</label>
+                <input name="pallets" type="number" min="1" value="50" />
+              </div>
+              <div class="field">
+                <label>Storage duration</label>
+                <select name="duration">
+                  <option>1 week</option>
+                  <option selected>2 weeks</option>
+                  <option>1 month</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top:14px;">
+              <button class="btn" type="submit">Search Storage</button>
+            </div>
+
+            <div class="footerNote">
+              Demo only: no payments, no contracts. This is for endorsement review and stakeholder validation.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3 style="margin:0 0 8px;">How it works (prototype)</h3>
+      <div class="row">
+        <div class="kpi">1) Search warehouses by location</div>
+        <div class="kpi">2) View live capacity (demo data)</div>
+        <div class="kpi">3) Submit booking request</div>
+        <div class="kpi">4) Warehouse owner updates capacity</div>
+      </div>
+      <div class="small" style="margin-top:10px;">
+        Roadmap: API Gateway + microservices + database + AI/ML forecasting on AWS.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
